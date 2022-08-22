@@ -12,6 +12,7 @@ public class StudentController {
     @GetMapping("/student")
     public List<Student> getStudent()
     {
+        // add new student in a file
         List<Student> l1= new ArrayList<>();
        Student student = new StudentBuilder().setId(1).setAge(20).setName("QRC").getStudent();
        l1.add(student);
